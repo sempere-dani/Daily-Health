@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.tablerow.Equivalencias">
+
+    <Button
+        android:text="Ver Archivo"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+
+        android:shadowColor="#483D8B"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:background="@drawable/save_button"
+        android:id="@+id/button"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent"
+      android:src="@drawable/tabla_equivalencias"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    tools:context="com.example.daniel.tablerow.Piramide"
+    android:background="#FFFFFF"
+    >
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:src="@drawable/piramide_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:src="@drawable/piramide1"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

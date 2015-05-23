@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Daily Health</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_activities">AddActivities</string>
+    <string name="title_activity_aaaa">aaaa</string>
+    <string name="title_activity_new_data">newData</string>
+    <string name="newData">Introducir datos</string>
+    <string name="Seleccion">Selecciona un tipo de alimento</string>
+
+
+    <string-array name="tipos">
+        <item>Agua</item>
+        <item>Pan,Arroz,Pasta</item>
+        <item>Verduras</item>
+        <item>Fruta</item>
+        <item>Aceite Oliva</item>
+        <item>Frutos Secos</item>
+        <item>Lacteos</item>
+        <item>Legumbres*</item>
+        <item>Carne*</item>
+        <item>Pescado*</item>
+        <item>Huevos*</item>
+        <item>Patatas*</item>
+        <item>Embutido*</item>
+    </string-array>
+    <string-array name="tipos2">
+
+        <item>Fruta</item>
+        <item>Lacteos</item>
+
+    </string-array>
+    <string name="title_activity_update">Update</string>
+    <string name="title_activity_daily_healthy">DailyHealthy</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_piramide">Piramide</string>
+    <string name="title_activity_equivalencias">Equivalencias</string>
+    <string name="title_activity_recetas">Recetas</string>
+    <string name="title_activity_historial">Historial</string>
+    <string name="title_activity_busqueda">Busqueda</string>
+    <string name="title_activity_adapert">Adapert</string>
+</resources>

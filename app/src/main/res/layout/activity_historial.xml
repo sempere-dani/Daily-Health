@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondo1">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp">
+
+        <CalendarView
+            android:layout_width="334dp"
+            android:layout_height="264dp"
+            android:id="@+id/calendarView"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/desde"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desde"
+                android:id="@+id/textView"
+                android:layout_alignBottom="@+id/desde"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasta"
+                android:layout_alignBottom="@+id/desde"
+                android:layout_marginLeft="200dp"/>
+            <EditText
+                android:id="@+id/hasta"
+                android:layout_width="80dp"
+                android:textSize="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/desde"
+                android:layout_marginLeft="250dp"/>
+
+            <Button
+                android:id="@+id/btSearch"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:background="@drawable/save_button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Buscar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btSearch">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/btSearch">
+
+
+                <TableLayout xmlns:tools= "http://schemas.android.com/tools"
+                    android:id= "@+id/tablelayout"
+                    android:layout_width= "match_parent"
+                    android:layout_height= "wrap_content"
+                    android:stretchColumns="*"
+
+                    android:weightSum="1"
+                    android:layout_below="@+id/desde"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp">
+
+                </TableLayout>
+
+            </ScrollView>
+        </HorizontalScrollView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
